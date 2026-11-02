@@ -1,0 +1,42 @@
+# OS / editor
+.DS_Store
+
+# Git links to the upstream Stake Engine SDK repos (renamed from .git; see README)
+.git-stakeengine/
+
+# Dependencies and environments
+node_modules/
+math-sdk/env/
+__pycache__/
+*.pyc
+
+# Build output and caches
+build/
+dist/
+.svelte-kit/
+.turbo/
+storybook-static/
+
+# Math books: over GitHub's 100 MB limit, already uploaded to Stake, and regenerated
+# exactly by math-sdk/games/sticky_fruits/run.py
+*.jsonl.zst
+
+# Generated math library (run.py output); upload/math keeps the published lookup tables
+math-sdk/games/*/library/books/
+math-sdk/games/*/library/forces/
+math-sdk/games/*/library/lookup_tables/
+math-sdk/games/*/library/publish_files/
+math-sdk/games/*/library/optimization_files/
+math-sdk/games/*/library/temp_multi_threaded_files/
+
+# Local backups and agent work notes
+backups/
+.superpowers/
+
+# Stake Engine's sample games (unchanged upstream; not needed to build this game)
+web-sdk/apps/cluster/
+web-sdk/apps/lines/
+web-sdk/apps/number-picker/
+web-sdk/apps/price/
+web-sdk/apps/scatter/
+web-sdk/apps/ways/
